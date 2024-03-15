@@ -1,0 +1,4 @@
+Primary color- #e91e63
+Primary text- #000000 
+Secondary text- #757575 - GREY 600
+Divider color- #BDBDBD - GREY 400

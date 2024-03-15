@@ -1,0 +1,36 @@
+.logosobreformulario {
+  width: 120px;
+  height: auto;
+
+}
+
+ 
+  .logosobreformulario {
+    position: absolute;
+   
+    width: 15%;
+    height: auto;
+    
+    position: absolute;
+    top: 25%; 
+    left: 5%; 
+    transform: translate(-25%, -50%);
+  }
+
+
+  .top-links {
+    text-align: center; 
+    margin-top: 20px; 
+  }
+  
+  .top-links a {
+    margin: 0 10px; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px; 
+    
+  }
+  
+  .top-links a:hover {
+    text-decoration: underline; 
+  }

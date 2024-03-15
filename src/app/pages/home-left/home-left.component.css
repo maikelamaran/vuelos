@@ -1,0 +1,29 @@
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 80px;
+    height: auto; 
+  }
+  .text-container {
+    position: absolute;
+    top: 20%; 
+    right: 0; 
+    transform: translateY(-50%);
+    text-align: right; 
+    color: white; 
+  }
+  .top-text{
+    font-size: 20px;
+    padding-bottom: 10px;
+    
+  }
+   .bottom-text {
+    font-size: 50px; 
+    font-weight: bold;
+  }
+  
+  .bottom-text {
+    margin-top: 0px;
+  }

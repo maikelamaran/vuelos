@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+  
+  .col-2,
+  .col-4 {
+    flex: 0 0 auto;
+  }
+
+  
+  .app-vuelosleft-top{
+    background-size: cover;
+    width: 200px;
+    height: 140px;
+    color: white;
+    background-image: url('/assets/vuelos.png');
+    background-size: cover;
+   margin-bottom: 10px;
+    
+  }
+  .app-vuelosleft-bot{
+    background-size: cover;
+    width: 200px;
+    height: 140px;
+    color: white;
+    background-image: url('/assets/casas.png');
+    background-size: cover;
+    
+  }
+  .app-vuelosright-top{
+    background-size: cover;
+    width: 200px;
+    height: 140px; 
+    color: white;
+    background-image: url('/assets/Experiencias.png');
+    background-size: cover;      
+    margin-bottom: 10px;
+  }
+  .app-vuelosright-bot {
+    background-size: cover;
+    width: 200px;
+    height: 140px;
+    color: white;
+    background-image: url('/assets/autos.png');
+    background-size: cover;
+    
+  }
+  
+  
+  .app-vuelos-center {
+    background-size: cover;
+    width: 400px; 
+    height: 290px; 
+    color: white;
+    background-image: url('/assets/Hoteles.png');
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .app-vuelosleft-top,
+  .app-vuelosleft-bot,
+  .app-vuelosright-top,
+  .app-vuelosright-bot,
+  .app-vuelos-center {
+    position: relative;
+  }
+  
+  app-vuelosleft-top,
+  app-vuelosleft-bot,
+  app-vuelosright-top,
+  app-vuelosright-bot,
+  app-vuelos-center{
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    margin: 0;
+    padding: 0;
+  }
+ 
+ 
+  
+ 
+  
+    
+ 

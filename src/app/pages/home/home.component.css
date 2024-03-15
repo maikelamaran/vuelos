@@ -1,0 +1,30 @@
+.left-component {
+    background-image: url('/assets/leftimage.jpg');
+    padding-bottom: 10px;
+    width: 50%; 
+    height: 100vh; 
+    float: left; 
+    padding-top:0px;
+    padding-left:0px;
+    background-size:  cover;
+    background-position: center bottom;
+    position: relative;
+   
+  }
+  
+  .right-component {
+    background-image: url('/assets/rightimage.jpg');
+    padding-bottom: 10px;
+    width: 50%; 
+    height: 100vh;
+    float: left; 
+    padding-top:0px;
+    padding-right: 0px;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+ 

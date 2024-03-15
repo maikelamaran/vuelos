@@ -1,0 +1,28 @@
+.icon-container mat-icon {
+  margin: 15px;
+}
+
+.custom-datepicker-toggle {
+  order: -1;
+  border-radius: 20px;
+}
+
+.planediv {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.rounded-button {
+  border-radius: 20px;
+  width: 40%;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.big-rounded-button {
+  border-radius: 20px;
+
+  flex-direction: row-reverse;
+  align-items: center;
+}
+

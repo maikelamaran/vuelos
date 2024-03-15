@@ -1,0 +1,107 @@
+<!-- formulario.component.html -->
+
+<div>
+  <div class="icon-container">
+    <mat-icon (click)="mostrarFormulario('avion')" color="primary" style="transform: rotate(90deg)" 
+      >airplanemode_active</mat-icon
+    >
+    <mat-icon (click)="mostrarFormulario('banco')" color="primary"
+      >account_balance</mat-icon
+    >
+    <mat-icon (click)="mostrarFormulario('casa')" color="primary"
+      >home</mat-icon
+    >
+    <mat-icon (click)="mostrarFormulario('brujula')" color="primary"
+      >explore</mat-icon
+    >
+    <mat-icon (click)="mostrarFormulario('carro')" color="primary"
+      >directions_car</mat-icon
+    >
+    <mat-icon (click)="mostrarFormulario('bus')" color="primary"
+      >directions_bus</mat-icon
+    >
+    <mat-icon (click)="mostrarFormulario('otro')" color="primary"
+      >directions</mat-icon
+    >
+  </div>
+
+  <div>
+    <div *ngIf="formularioSeleccionado === 'avion'">
+      <form     
+      class="example-form"
+      (ngSubmit)="emitirDatos()"
+      
+    >
+      <div class="planediv">
+        <mat-radio-group aria-label="Select an option" color="primary">
+          <mat-radio-button value="ida_vuelta">Ida y vuelta</mat-radio-button>
+          <mat-radio-button value="ida">Solo ida</mat-radio-button>
+          <mat-radio-button value="multidestino">Multidestino</mat-radio-button>
+        </mat-radio-group>
+        <div>
+          <button mat-icon-button class="rounded-button" >
+           
+            <mat-icon color="primary" matListIcon>location_on</mat-icon>
+            Origen
+          </button>
+          <button mat-icon-button class="rounded-button" >
+            
+            <mat-icon color="primary" matListIcon>location_on</mat-icon>
+            Destino
+          </button>
+        </div>
+        
+        <mat-form-field>
+          <mat-label>Fecha de Salida</mat-label>
+         
+          <input matInput [matDatepicker]="picker" />
+          <mat-datepicker-toggle matPrefix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Fecha de Retorno</mat-label>
+         
+          <input matInput [matDatepicker]="picker2" />
+          <mat-datepicker-toggle matPrefix [for]="picker2"></mat-datepicker-toggle>
+          <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
+        <button mat-icon-button class="big-rounded-button" >
+          
+          <mat-icon color="primary" matListIcon>location_on</mat-icon>
+          Pasageros
+        </button>
+        <button mat-icon-button class="big-rounded-button" type="submit">
+          <mat-icon color="primary" class="search-icon">search</mat-icon>
+          BUSCAR
+        </button>
+      </div>
+      </form>
+    </div>
+    <div *ngIf="formularioSeleccionado === 'banco'">
+      <div class="planediv">
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="ida_vuelta">Ida y vuelta</mat-radio-button>
+          <mat-radio-button value="ida">Solo ida</mat-radio-button>
+          <mat-radio-button value="multidestino">Multidestino</mat-radio-button>
+        </mat-radio-group>
+        <button mat-icon-button class="rounded-button" >
+          <mat-icon color="primary" matListIcon>location_on</mat-icon>
+        </button>
+        <mat-form-field>
+          <mat-label>Fecha de Salida</mat-label>
+         
+          <input matInput [matDatepicker]="picker" />
+          <mat-datepicker-toggle matPrefix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Fecha de Retorno</mat-label>
+         
+          <input matInput [matDatepicker]="picker" />
+          <mat-datepicker-toggle matPrefix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </div>
+    
+  </div>
+</div>
