@@ -10,9 +10,9 @@ import { VuelosrightTopComponent } from '../../components/vuelosright-top/vuelos
   selector: 'app-llevarte',
   standalone: true,
   imports: [VuelosCenterComponent,VuelosTopComponent,VuelosleftBotComponent,VuelosleftTopComponent,VuelosrightBotComponent,VuelosrightTopComponent],
-  templateUrl: './llevarte.component.html',
-  styleUrl: './llevarte.component.css'
+  templateUrl: './vuelos.component.html',
+  styleUrl: './vuelos.component.css'
 })
-export class LlevarteComponent {
+export class VuelosComponent {
 
 }
