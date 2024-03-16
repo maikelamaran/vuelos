@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-opiniones-derecha-bot',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './opiniones-derecha-bot.component.css'
 })
 export class OpinionesDerechaBotComponent {
-
+@Input() opinion:string="";
 }
