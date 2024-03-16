@@ -1,0 +1,31 @@
+.opinioneswrapper {
+  background-image: url("/assets/backgroungpink.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  width: 100vw; /* Ocupa toda la anchura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.opiniones-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.opiniones-container > * {
+  margin-right: 20px;
+}
+
+.opiniones-container > :last-child {
+  margin-right: 0;
+}
+
+

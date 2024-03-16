@@ -1,0 +1,9 @@
+.opiniones-izquierda-bot {
+    display: flex;
+    justify-content: right;
+  }
+  
+  .opiniones-izquierda-bot img {
+    width: 320px;
+    height: auto;
+  }

@@ -1,0 +1,41 @@
+.opiniones-derecha-top {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+    
+  }
+  
+  .opiniones-derecha-top h1 {
+    font-size: 1.5rem;
+  }
+  
+  .opiniones-derecha-top img {
+    width: 100px;
+    height: auto;
+  }
+  .transparent-card {
+    background-color: transparent;
+    box-shadow: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  mat-card-header p{
+    font-size: 3em;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+
+  mat-card-content{
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+  }

@@ -1,0 +1,24 @@
+.big-text {
+    font-size: 3.5em; 
+    font-weight: bold;
+  }
+  .opiniones-container {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .opiniones-container > * {
+    margin-right: 20px; /* Ajusta este valor según tu preferencia */
+  }
+  
+  .opiniones-container > :last-child {
+    margin-right: 0;
+   
+  }
+  .topcontainer{
+    margin-bottom: 50px;
+  }
+  .topcontainer h3{
+    text-align: right;
+  }
