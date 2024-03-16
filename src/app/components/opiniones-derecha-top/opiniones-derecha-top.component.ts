@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { StarRatingComponent } from '../star-rating/star-rating.component';
 
@@ -11,6 +11,6 @@ import { StarRatingComponent } from '../star-rating/star-rating.component';
   styleUrl: './opiniones-derecha-top.component.css',
 })
 export class OpinionesDerechaTopComponent {
-  rating: number = 3.5;
-  usuario:string = "Erika Scarlet Clark";
+  @Input() rating: number = 3.5;
+  @Input() usuario:string = "Erika Scarlet Clark";
 }

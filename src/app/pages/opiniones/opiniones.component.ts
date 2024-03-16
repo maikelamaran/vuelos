@@ -14,5 +14,6 @@ import { OpinionesIzquierdaTopComponent } from '../../components/opiniones-izqui
   styleUrl: './opiniones.component.css'
 })
 export class OpinionesComponent {
-
+rating:number=3.5;
+usuario:string="Erika Scarlet Clark";
 }
