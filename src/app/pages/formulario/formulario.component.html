@@ -2,25 +2,25 @@
 
 <div>
   <div class="icon-container">
-    <mat-icon (click)="mostrarFormulario('avion')" color="primary" style="transform: rotate(90deg)" 
+    <mat-icon (click)="mostrarFormulario('avion')" [color]="formularioSeleccionado === 'avion' ? 'primary' : 'disabled'" style="transform: rotate(90deg)" 
       >airplanemode_active</mat-icon
     >
-    <mat-icon (click)="mostrarFormulario('banco')" color="primary"
-      >account_balance</mat-icon
+    <mat-icon (click)="mostrarFormulario('banco')" [color]="formularioSeleccionado === 'banco' ? 'primary' : 'disabled'"
+      >account_balance_rounded</mat-icon
     >
-    <mat-icon (click)="mostrarFormulario('casa')" color="primary"
+    <mat-icon (click)="mostrarFormulario('casa')" [color]="formularioSeleccionado === 'casa' ? 'primary' : 'disabled'"
       >home</mat-icon
     >
-    <mat-icon (click)="mostrarFormulario('brujula')" color="primary"
+    <mat-icon (click)="mostrarFormulario('brujula')" [color]="formularioSeleccionado === 'brujula' ? 'primary' : 'disabled'"
       >explore</mat-icon
     >
-    <mat-icon (click)="mostrarFormulario('carro')" color="primary"
+    <mat-icon (click)="mostrarFormulario('carro')" [color]="formularioSeleccionado === 'carro' ? 'primary' : 'disabled'"
       >directions_car</mat-icon
     >
-    <mat-icon (click)="mostrarFormulario('bus')" color="primary"
+    <mat-icon (click)="mostrarFormulario('bus')" [color]="formularioSeleccionado === 'bus' ? 'primary' : 'disabled'"
       >directions_bus</mat-icon
     >
-    <mat-icon (click)="mostrarFormulario('otro')" color="primary"
+    <mat-icon (click)="mostrarFormulario('otro')" [color]="formularioSeleccionado === 'otro' ? 'primary' : 'disabled'"
       >directions</mat-icon
     >
   </div>
@@ -84,23 +84,7 @@
           <mat-radio-button value="ida">Solo ida</mat-radio-button>
           <mat-radio-button value="multidestino">Multidestino</mat-radio-button>
         </mat-radio-group>
-        <button mat-icon-button class="rounded-button" >
-          <mat-icon color="primary" matListIcon>location_on</mat-icon>
-        </button>
-        <mat-form-field>
-          <mat-label>Fecha de Salida</mat-label>
-         
-          <input matInput [matDatepicker]="picker" />
-          <mat-datepicker-toggle matPrefix [for]="picker"></mat-datepicker-toggle>
-          <mat-datepicker #picker></mat-datepicker>
-        </mat-form-field>
-        <mat-form-field>
-          <mat-label>Fecha de Retorno</mat-label>
-         
-          <input matInput [matDatepicker]="picker" />
-          <mat-datepicker-toggle matPrefix [for]="picker"></mat-datepicker-toggle>
-          <mat-datepicker #picker></mat-datepicker>
-        </mat-form-field>
+      
     </div>
     
   </div>
