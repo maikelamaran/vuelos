@@ -1,0 +1,35 @@
+.contenedorproductos {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.maincontainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.cardproducto {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textocabeceralistaproductos {
+  font-size: xx-large;
+}
+
+.textoslogan {
+  align-self: flex-start;
+
+}
+.textoslogan .textogrande {
+    font-size: 3.5em;
+    margin-bottom: 40px;
+    font-weight: bold;
+}.textoslogan .textonormal {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+   
+}

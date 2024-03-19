@@ -1,0 +1,23 @@
+<!-- <app-producttemplate></app-producttemplate> -->
+<div class="card-wrapper">
+
+    <mat-card class="example-card">
+      <mat-card-header>
+        
+        <mat-card-title><img class="imagencard"
+            src="/assets/{{producto!.nombre}}.JPG"
+           /></mat-card-title>
+        <mat-card-subtitle>
+          <div class="nameprecio"><div class="productname" style="white-space: pre-line"> {{producto!.nombre | truncateText: 10 }}</div>
+          <div class="precioarea"><div class="productprecio">${{producto?.precio}}CUP</div><div class="pornoche"> por noche</div></div></div>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <div class="matdivider"><mat-divider></mat-divider></div>
+      <mat-card-content>
+     <div class="footer">
+        <div class="ubicacion"><mat-icon class="iconoubicacion">location_on</mat-icon>{{producto?.ubicacion}}</div><div class="rating"><app-star-rating [rating]=producto!.rating ></app-star-rating></div>
+     </div>
+      </mat-card-content>  
+    </mat-card>
+  
+  </div>

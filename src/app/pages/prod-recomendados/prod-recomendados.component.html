@@ -1,1 +1,25 @@
-<p>prod-recomendados works!</p>
+<div class="maincontainer">
+  <div>
+    <div class="textoslogan">
+      <p class="textonormal">¿NO SABES QUÉ ESCOGER?</p>
+      <p class="textogrande">Productos Recomendados</p>
+    </div>
+
+    <div class="hoteles">
+      <div class="textocabeceralistaproductos">{{ cabeceraPrimera }}</div>
+      <div class="contenedorproductos">
+        <div class="cardproducto" *ngFor="let item of listadodehoteles">
+          <app-producttemplate [producto]="item"></app-producttemplate>
+        </div>
+      </div>
+    </div>
+    <div class="casas">
+      <div class="textocabeceralistaproductos">{{ cabeceraSecundaria }}</div>
+      <div class="contenedorproductos">
+        <div class="cardproducto" *ngFor="let item of listadodecasas">
+          <app-producttemplate [producto]="item"></app-producttemplate>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+.card-wrapper {
+  width: 350px; /* Ancho deseado para tu tarjeta */
+  margin: 0 auto; /* Centra horizontalmente la tarjeta */
+}
+.nameprecio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.matdivider {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.productname {
+  text-align: left;
+  font-size: 1.2em;
+}
+.productprecio {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.pornoche {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imagencard {
+  margin: 10px;
+  padding: 0px;
+  width: 330px;
+  height: auto;
+}
+mat-card-header {
+  margin: 0px;
+  padding: 0px;
+}
+mat-card-subtitle {
+  margin: 10px;
+  padding: 0px;
+}
+mat-card-content {
+  margin: 10px;
+  padding: 0px;
+}
+.precioarea {
+  margin-right: 10px;
+  padding: 0px;
+  text-align: right;
+}
+mat-card {
+  padding: 0px;
+}
+.iconoubicacion {
+  font-size: 1.5em;
+  color: #ff076e;
+}
